@@ -308,7 +308,7 @@ class slManager(Screen):
 
     def slPanel(self):
         if os.path.exists('/usr/lib/enigma2/python/Plugins/Extensions/sladdon'):
-            from Plugins.Extensions.tvaddon.plugin import Hometv
+            from Plugins.Extensions.sladdon.plugin import Hometv
             self.session.openWithCallback(self.close, Hometv)
         else:
             self.session.open(MessageBox, 'slAddon Panel Not Installed!!', type=MessageBox.TYPE_INFO, timeout=3)
